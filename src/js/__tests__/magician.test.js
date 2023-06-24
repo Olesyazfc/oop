@@ -1,4 +1,5 @@
-import {Character, Magician} from '../basic.js'
+import Character from '../basic.js'
+import Magician from '../Magician.js';
 
 test('Верный ввод Magician', () => {
     const received = new Magician('Berny', 'Magician');
@@ -8,7 +9,7 @@ test('Верный ввод Magician', () => {
       health: 100,
       level: 1,
       attack: 10,
-      defence: 40,
+      defence: 40
     };
     expect(received).toEqual(expected);
   });

@@ -1,4 +1,5 @@
-import {Character, Zombie} from '../basic.js'
+import Character from '../basic.js'
+import Zombie from '../Zombie.js';
 
 test('Верный ввод Zombie', () => {
     const received = new Zombie('Berny', 'Zombie');

@@ -1,4 +1,5 @@
-import {Character, Undead} from '../basic.js'
+import Character from '../basic.js'
+import Undead from '../Undead.js';
 
 test('Верный ввод Undead', () => {
     const received = new Undead('Berny', 'Undead');

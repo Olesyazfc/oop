@@ -1,31 +1,10 @@
-import {Character, Bowman, Daemon, Swordsman, Undead, Zombie, Magician} from '../basic.js'
+import Character from '../basic.js'
+import Bowman from '../Bowman.js'
 
-// const characters = [
-//     [['char1', 'Bowman'], {"name":"Bowman","type":"Bowman","health":100,"level":1,"attack":25,"defence":25}]
-//     [['char2', 'Swordsman'], {"name":"Swordsman","type":"Swordsman","health":100,"level":1,"attack":40,"defence":10}],
-//     ['char3', 'Magician'],
-//     ['char4', 'Daemon'],
-//     ['char5', 'Undead'],
-//     ['char6', 'Zombie']
-// ]
-
-// const charactersInfo = [
-//     {"name":"Bowman","type":"Bowman","health":100,"level":1,"attack":25,"defence":25},
-//     {"name":"Swordsman","type":"Swordsman","health":100,"level":1,"attack":40,"defence":10},
-//     {"name":"Magician","type":"Magician","health":100,"level":1,"attack":10,"defence":40},
-//     {"name":"Daemon","type":"Daemon","health":100,"level":1,"attack":10,"defence":40},
-//     {"name":"Undead","type":"Undead","health":100,"level":1,"attack":25,"defence":25},
-//     {"name":"Zombie","type":"Zombie","health":100,"level":1,"attack":40,"defence":10}
-// ]
-// 
-// const characters = []
-
-// const handler = test.each(characters)
-
-const level2 = {"name":"Bobby","type":"Bowman","health":100,"level":2,"attack":30,"defence":30}
+const level2 = {"name":"Bobby","type":"Bowman","health":100,"level":2, "attack":30,"defence":30}
 
 test('повышение уровня с имеющимся здоровьем', () => {
-  const char = new Bowman('Bobby'); 
+  const char = new Bowman('Bobby', 'Bowman'); 
   char.levelUp() 
   expect(char).toEqual(level2);
 });

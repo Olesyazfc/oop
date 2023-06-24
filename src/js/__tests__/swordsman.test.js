@@ -1,4 +1,5 @@
-import {Character, Swordsman} from '../basic.js'
+import Character from '../basic.js'
+import Swordsman from '../Swordsman.js';
 
 test('Верный ввод Swordsman', () => {
     const received = new Swordsman('Berny', 'Swordsman');

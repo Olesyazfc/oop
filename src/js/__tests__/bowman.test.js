@@ -1,4 +1,5 @@
-import {Character, Bowman} from '../basic.js'
+import Character from '../basic.js'
+import Bowman from '../Bowman.js'
 
 test('Верный ввод Bowman', () => {
     const received = new Bowman('Berny', 'Bowman');
@@ -8,7 +9,7 @@ test('Верный ввод Bowman', () => {
       health: 100,
       level: 1,
       attack: 25,
-      defence: 25,
+      defence: 25
     };
     expect(received).toEqual(expected);
   });
